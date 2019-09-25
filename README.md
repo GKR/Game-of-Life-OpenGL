@@ -2,7 +2,7 @@
 
 Simulates John Conway's "The Game of Life" in an OpenGL fragment shader (GLSL). 
 
-![](docs/game-of-life.gif)
+![](docs/opengl-game-of-life.gif)
 
 ## How it works
  * Application reads an image with the initial pattern
