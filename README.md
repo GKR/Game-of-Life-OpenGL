@@ -12,7 +12,19 @@ Simulates John Conway's "The Game of Life" in an OpenGL fragment shader (GLSL).
  * Then the two framebuffers are swapped
  * Second pass just renders the output texture as fullscreen quad on screen buffer
 
-## Setup MinGW/x64 on Windows
+## Building on Linux
+Install GCC or Clang, along with cmake and make. On most Linux distibutions this is a straightforward and well documented task.
+
+```
+mkdir Build && cd Build
+cmake ..
+make
+```
+
+## Building on Windows
+This can be build using Visual Studio, but this will show how you can setup the MinGW GCC compiler on windows to build cross platform C++ applications.
+
+### Setup MinGW/x64 on Windows
 http://www.msys2.org/
 https://www.devdungeon.com/content/install-gcc-compiler-windows-msys2-cc
 
@@ -25,13 +37,13 @@ pacman -S mingw-w64-x86_64-glfw
 pacman -S mingw-w64-x86_64-glew
 pacman -S mingw-w64-x86_64-glm
 pacman -S mingw-w64-x86_64-libpng
-
 pacman -Ss glfw
 ```
 
-```
-Add to PATH: C:\msys64\mingw64\bin
+Add to PATH: ```C:\msys64\mingw64\bin```
 
+Then build the source
+```
 mkdir Build && cd Build
 cmake -G "MinGW Makefiles" ..
 mingw32-make
