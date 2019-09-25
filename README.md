@@ -1,10 +1,8 @@
-# The Game of Life in OpenGL
+# The Game of Life in OpenGL using GLSL shaders
 
-Simulates John Conway's "The Game of Life" in an OpenGL fragment shader. 
+Simulates John Conway's "The Game of Life" in an OpenGL fragment shader (GLSL). 
 
-## (Modern) OpenGL Rendering Pipeline
-![](documentation/opengl-pipeline.png)
-Source: https://learnopengl.com
+![](docs/game-of-life.gif)
 
 ## How it works
  * Application reads an image with the initial pattern
