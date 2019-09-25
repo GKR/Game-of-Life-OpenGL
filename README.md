@@ -25,9 +25,13 @@ make
 This can be build using Visual Studio, but this will show how you can setup the MinGW GCC compiler on windows to build cross platform C++ applications.
 
 ### Setup MinGW/x64 on Windows
+Download and install MSYS2:
 http://www.msys2.org/
+
+Here is a guide which covers most of this:
 https://www.devdungeon.com/content/install-gcc-compiler-windows-msys2-cc
 
+Now install required dependencies:
 ```
 pacman -Syu
 pacman -S mingw-w64-x86_64-toolchain
@@ -42,7 +46,7 @@ pacman -Ss glfw
 
 Add to PATH: ```C:\msys64\mingw64\bin```
 
-Then build the source
+Then build the source:
 ```
 mkdir Build && cd Build
 cmake -G "MinGW Makefiles" ..
